@@ -74,7 +74,10 @@ export default function App() {
       const data = [...todos, todo];
       storeData('todos', data).then(()=>{
 
-        Alert.alert("TODO Added")
+         setText('');
+        Platform.OS === 'android' || Platform.OS === 'ios'
+          ? Alert.alert('TODO Added')
+          : alert('TODO Added');
       });
       setTodos(data);
     } else {
