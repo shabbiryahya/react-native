@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { useState } from 'react';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { useEffect, useState } from 'react';
 
 import Navbar from './component/Navbar';
 import Display from './component/Display';
@@ -18,8 +18,30 @@ const [bracketopen, setBracketOpen] = useState(false)
 const [mstore, setmStore]=useState('0');
   const [upstore, setupStore]=useState('0');
 
+  const [isLoading,setLoading]=useState(false);
+
+  useEffect(()=>{
+
+    setLoading(true);
+    setTimeout(() => {
+
+      setLoading(false)
+      
+    }, 2000);
+
+  },[])
+
   return (
-    <View style={styles.container}>
+
+   
+   isLoading?<SafeAreaView style={styles.container}>
+
+    <View>
+     <Text>Calculator By Shabbir</Text> 
+    </View>
+   </SafeAreaView>
+   
+   :<View style={styles.container}>
 
    
 
