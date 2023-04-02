@@ -18,7 +18,7 @@ const Buttons = () => {
      <Ionicons name='ios-backspace-outline' size={25} color="black" />
      </TouchableOpacity>
 
-     <TouchableOpacity style={styles.buttonHover} >
+     {/* <TouchableOpacity style={styles.buttonHover} >
         <Text>%</Text>
      </TouchableOpacity  >
      <TouchableOpacity style={styles.buttonHover}>
@@ -29,7 +29,7 @@ const Buttons = () => {
      </TouchableOpacity >
      <TouchableOpacity style={styles.buttonHover}>
      <Ionicons name='ios-backspace-outline' size={25} color="black" />
-     </TouchableOpacity>
+     </TouchableOpacity> */}
 
     </View>
   )
