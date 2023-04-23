@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "calculator-app",
-    "slug": "calculator-app",
+    "name": "LoginScreenHomeScreen",
+    "slug": "LoginScreenHomeScreen",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,20 +18,13 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "in.subrat.sample",
-      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "83d0c7cc-3e23-45ab-b344-ef16e8638020"
-      }
     }
   }
 }
